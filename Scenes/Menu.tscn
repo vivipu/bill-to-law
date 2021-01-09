@@ -18,10 +18,10 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 473.814
-margin_top = 446.468
-margin_right = 873.814
-margin_bottom = 850.468
+margin_left = 498.508
+margin_top = 448.713
+margin_right = 898.508
+margin_bottom = 852.713
 rect_scale = Vector2( 0.700838, 0.559351 )
 alignment = 1
 __meta__ = {
@@ -67,11 +67,14 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = 437.072
-margin_top = 30.4161
-margin_right = 937.072
-margin_bottom = 530.416
+margin_left = 464.011
+margin_top = 19.1914
+margin_right = 964.011
+margin_bottom = 519.191
 rect_scale = Vector2( 0.734142, 0.786292 )
 texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/TextureButton2" to="." method="_on_TextureButton2_pressed"]

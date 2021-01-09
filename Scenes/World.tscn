@@ -290,22 +290,22 @@ scale = Vector2( 2.50749, 2.4635 )
 texture = SubResource( 1 )
 
 [node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/HopperPopup/Background"]
-margin_left = -4.77655
-margin_top = -7.2664
-margin_right = 695.223
-margin_bottom = 492.734
-rect_scale = Vector2( 0.0311285, 0.0403293 )
+margin_left = -4.52362
+margin_top = -7.30881
+margin_right = 695.476
+margin_bottom = 492.692
+rect_scale = Vector2( 0.0322986, 0.0423392 )
 texture = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Entered" type="TextureButton" parent="Player (Bill)/CanvasLayer/HopperPopup"]
-margin_left = 11.6382
-margin_top = 26.8056
-margin_right = 411.638
-margin_bottom = 226.806
-rect_scale = Vector2( 0.0394315, 0.0613866 )
+margin_left = 13.6819
+margin_top = 27.8502
+margin_right = 413.682
+margin_bottom = 227.851
+rect_scale = Vector2( 0.03379, 0.0516437 )
 texture_normal = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
