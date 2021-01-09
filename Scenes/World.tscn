@@ -1,0 +1,920 @@
+[gd_scene load_steps=65 format=2]
+
+[ext_resource path="res://Scenes/Player (Bill).tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/World.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Player (Bill).gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Community.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Artwork/instructions.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Artwork/light.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Artwork/Communitystatement.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Artwork/ok.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Artwork/gobackunclick.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Artwork/gobackclick.png" type="Texture" id=10]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/hopper.jpg-8694faf68ba93659438a4a853fd247d8.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/enter.png-49a52a799d5c34c7cc63ced491b171fb.stex"
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=5]
+flags = 4
+load_path = "res://.import/committe1.png-15927e3dd8f7d6978e2a2eba15e14c92.stex"
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/committee11.png-1bdc3fb0ec726f508979fb497859f614.stex"
+
+[sub_resource type="StreamTexture" id=7]
+flags = 4
+load_path = "res://.import/committee12.png-c0754cd21381150b6f70f9931940787d.stex"
+
+[sub_resource type="StreamTexture" id=8]
+flags = 4
+load_path = "res://.import/committee13.png-3c23ec4c1dd3cad6ed8cba98b2efed5c.stex"
+
+[sub_resource type="StreamTexture" id=9]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=10]
+flags = 4
+load_path = "res://.import/house.png-7d2eb8d93893a4e84222a84eeb637794.stex"
+
+[sub_resource type="StreamTexture" id=11]
+flags = 4
+load_path = "res://.import/investigation.png-4544abb0b8ae7a63e4a484a394a09bba.stex"
+
+[sub_resource type="StreamTexture" id=12]
+flags = 4
+load_path = "res://.import/cancel.png-3c3a191b4e2b5c6a88639b170106085e.stex"
+
+[sub_resource type="StreamTexture" id=13]
+flags = 4
+load_path = "res://.import/fire.png-a72ddbca1e2830c3fffe072a5bea5ca8.stex"
+
+[sub_resource type="StreamTexture" id=14]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=15]
+flags = 4
+load_path = "res://.import/committe2.png-649f09913fad8f2e4010c09dcb3e3799.stex"
+
+[sub_resource type="StreamTexture" id=16]
+flags = 4
+load_path = "res://.import/statetaxes.png-23986874742e9406011b4a67d515961c.stex"
+
+[sub_resource type="StreamTexture" id=17]
+flags = 4
+load_path = "res://.import/federaltaxes.png-38436a27f7f79fd4a0e5e278f970d6da.stex"
+
+[sub_resource type="StreamTexture" id=18]
+flags = 4
+load_path = "res://.import/citytaxes.png-f8b4f7d4656f7d9340888a9af9c6c850.stex"
+
+[sub_resource type="StreamTexture" id=19]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=20]
+flags = 4
+load_path = "res://.import/senate.png-63151c52a9ef1c6c9eb07ae6f10716b9.stex"
+
+[sub_resource type="StreamTexture" id=21]
+flags = 4
+load_path = "res://.import/majorrailroad3.png-46ea7e4fe8de268375b40ce5b4afbc1e.stex"
+
+[sub_resource type="StreamTexture" id=22]
+flags = 4
+load_path = "res://.import/majorrailroad2.png-03abe852401e0d37749153e8084958d5.stex"
+
+[sub_resource type="StreamTexture" id=23]
+flags = 4
+load_path = "res://.import/majorrailroad.png-d8e4301bdaeb30336e2df218a329d23c.stex"
+
+[sub_resource type="StreamTexture" id=24]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=25]
+flags = 4
+load_path = "res://.import/committeelost.png-4aba77cb150bb04f474d2e6cc212e429.stex"
+
+[sub_resource type="StreamTexture" id=26]
+flags = 4
+load_path = "res://.import/ok2.png-caac9dec688630e5e86c6e2ff6c98126.stex"
+
+[sub_resource type="StreamTexture" id=27]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=28]
+flags = 4
+load_path = "res://.import/committeewon.png-08ac8bc931ca9029893f1e2e17275227.stex"
+
+[sub_resource type="StreamTexture" id=29]
+flags = 4
+load_path = "res://.import/ok.png-43e45bdf2a26973ecf897b4dc3a31aec.stex"
+
+[sub_resource type="StreamTexture" id=30]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=31]
+flags = 4
+load_path = "res://.import/houselost.png-45ae0bea4a9ebc5eee475159dd28a79d.stex"
+
+[sub_resource type="StreamTexture" id=32]
+flags = 4
+load_path = "res://.import/ok2.png-caac9dec688630e5e86c6e2ff6c98126.stex"
+
+[sub_resource type="StreamTexture" id=33]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=34]
+flags = 4
+load_path = "res://.import/senatelost.png-d8c366d7547ce85528395ad82328e780.stex"
+
+[sub_resource type="StreamTexture" id=35]
+flags = 4
+load_path = "res://.import/ok2.png-caac9dec688630e5e86c6e2ff6c98126.stex"
+
+[sub_resource type="StreamTexture" id=36]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=37]
+flags = 4
+load_path = "res://.import/floorwon.png-36f6c6d18529f2a7e34ff25520ada96f.stex"
+
+[sub_resource type="StreamTexture" id=38]
+flags = 4
+load_path = "res://.import/ok.png-43e45bdf2a26973ecf897b4dc3a31aec.stex"
+
+[sub_resource type="StreamTexture" id=39]
+flags = 4
+load_path = "res://.import/checkmark.webp-7ebda7a49facd03e2eff71f36b91be02.stex"
+
+[sub_resource type="StreamTexture" id=40]
+flags = 4
+load_path = "res://.import/checkmark.webp-7ebda7a49facd03e2eff71f36b91be02.stex"
+
+[sub_resource type="StreamTexture" id=41]
+flags = 4
+load_path = "res://.import/x-30465_640.webp-68491137edfa9ba280c4296ca9f96883.stex"
+
+[sub_resource type="StreamTexture" id=42]
+flags = 4
+load_path = "res://.import/x-30465_640.webp-68491137edfa9ba280c4296ca9f96883.stex"
+
+[sub_resource type="RectangleShape2D" id=43]
+extents = Vector2( 90, 60 )
+
+[sub_resource type="RectangleShape2D" id=44]
+extents = Vector2( 52.4105, 36.339 )
+
+[sub_resource type="StreamTexture" id=45]
+flags = 4
+load_path = "res://.import/hopper.png-14a8c632b89fda47e3468f8a7a4be137.stex"
+
+[sub_resource type="RectangleShape2D" id=46]
+extents = Vector2( 90, 60 )
+
+[sub_resource type="RectangleShape2D" id=47]
+extents = Vector2( 52.4105, 36.339 )
+
+[sub_resource type="StreamTexture" id=48]
+flags = 4
+load_path = "res://.import/unnamed.png-445bd356c9f8ce720b19e840b650ddd2.stex"
+
+[sub_resource type="RectangleShape2D" id=49]
+extents = Vector2( 90, 60 )
+
+[sub_resource type="RectangleShape2D" id=50]
+extents = Vector2( 52.4105, 36.339 )
+
+[sub_resource type="StreamTexture" id=51]
+flags = 4
+load_path = "res://.import/houseandsenate.png-e61b12b78a89d13a29a54ced827cf6b8.stex"
+
+[sub_resource type="RectangleShape2D" id=52]
+extents = Vector2( 90, 60 )
+
+[sub_resource type="RectangleShape2D" id=53]
+extents = Vector2( 52.4105, 36.339 )
+
+[sub_resource type="StreamTexture" id=54]
+flags = 4
+load_path = "res://.import/presidentoftheunitedstates.svg-15738befb6657245422c2ed41363b788.stex"
+
+[node name="World" type="Node2D"]
+position = Vector2( 5.3454, 459.704 )
+script = ExtResource( 2 )
+
+[node name="Player (Bill)" parent="." instance=ExtResource( 1 )]
+position = Vector2( 94.2964, 104.534 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" parent="Player (Bill)" index="0"]
+position = Vector2( 1.18921, -11.2974 )
+scale = Vector2( 1.22119, 1.16848 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player (Bill)"]
+
+[node name="ProblemPopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/ProblemPopup"]
+modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = ExtResource( 6 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/ProblemPopup/Background"]
+margin_left = -5.50266
+margin_top = -6.92639
+margin_right = 694.497
+margin_bottom = 493.074
+rect_scale = Vector2( 0.017122, 0.0267973 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OK" type="TextureButton" parent="Player (Bill)/CanvasLayer/ProblemPopup"]
+margin_left = 15.4426
+margin_top = 29.7661
+margin_right = 415.443
+margin_bottom = 229.766
+rect_scale = Vector2( 0.0240903, 0.0348049 )
+texture_normal = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HopperPopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/HopperPopup"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 1 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/HopperPopup/Background"]
+margin_left = -4.77655
+margin_top = -7.2664
+margin_right = 695.223
+margin_bottom = 492.734
+rect_scale = Vector2( 0.0311285, 0.0403293 )
+texture = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entered" type="TextureButton" parent="Player (Bill)/CanvasLayer/HopperPopup"]
+margin_left = 11.6382
+margin_top = 26.8056
+margin_right = 411.638
+margin_bottom = 226.806
+rect_scale = Vector2( 0.0394315, 0.0613866 )
+texture_normal = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CommitteePopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/CommitteePopup"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 4 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/CommitteePopup/Background"]
+margin_left = -7.0
+margin_top = -8.0
+margin_right = 693.0
+margin_bottom = 492.0
+rect_scale = Vector2( 0.020077, 0.0311522 )
+texture = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteePopup"]
+margin_left = 0.772522
+margin_top = 31.1782
+margin_right = 400.773
+margin_bottom = 231.178
+rect_scale = Vector2( 0.0220969, 0.034355 )
+texture_normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteePopup"]
+margin_left = 9.84576
+margin_top = 31.0055
+margin_right = 409.846
+margin_bottom = 231.005
+rect_scale = Vector2( 0.0246824, 0.0393458 )
+texture_normal = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteePopup"]
+margin_left = 19.6202
+margin_top = 30.9468
+margin_right = 419.62
+margin_bottom = 230.947
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FloorHouse" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/FloorHouse"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 9 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/FloorHouse/Background"]
+margin_left = -6.28539
+margin_top = -8.0
+margin_right = 693.715
+margin_bottom = 492.0
+rect_scale = Vector2( 0.0201894, 0.0309582 )
+texture = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A3" type="TextureButton" parent="Player (Bill)/CanvasLayer/FloorHouse"]
+margin_left = 0.772522
+margin_top = 31.1782
+margin_right = 400.773
+margin_bottom = 231.178
+rect_scale = Vector2( 0.0220969, 0.034355 )
+texture_normal = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B3" type="TextureButton" parent="Player (Bill)/CanvasLayer/FloorHouse"]
+margin_left = 10.7105
+margin_top = 31.2027
+margin_right = 410.711
+margin_bottom = 231.203
+rect_scale = Vector2( 0.0212981, 0.0345741 )
+texture_normal = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C3" type="TextureButton" parent="Player (Bill)/CanvasLayer/FloorHouse"]
+margin_left = 19.6202
+margin_top = 30.9468
+margin_right = 419.62
+margin_bottom = 230.947
+rect_scale = Vector2( 0.0220258, 0.0359973 )
+texture_normal = SubResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CommitteePopup2" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/CommitteePopup2"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 14 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/CommitteePopup2/Background"]
+margin_left = -6.43567
+margin_top = -7.83166
+margin_right = 693.564
+margin_bottom = 492.168
+rect_scale = Vector2( 0.0197482, 0.0315272 )
+texture = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A2" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteePopup2"]
+margin_left = 0.99649
+margin_top = 32.1744
+margin_right = 400.997
+margin_bottom = 232.174
+rect_scale = Vector2( 0.0220969, 0.034355 )
+texture_normal = SubResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B2" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteePopup2"]
+margin_left = 9.54706
+margin_top = 31.6695
+margin_right = 409.547
+margin_bottom = 231.669
+rect_scale = Vector2( 0.0246824, 0.0393458 )
+texture_normal = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C2" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteePopup2"]
+margin_left = 20.2175
+margin_top = 31.5001
+margin_right = 420.218
+margin_bottom = 231.5
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SenatePopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/SenatePopup"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 19 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/SenatePopup/Background"]
+margin_left = -6.04431
+margin_top = -7.78673
+margin_right = 693.956
+margin_bottom = 492.213
+rect_scale = Vector2( 0.0170474, 0.0244227 )
+texture = SubResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A4" type="TextureButton" parent="Player (Bill)/CanvasLayer/SenatePopup"]
+margin_left = 3.78955
+margin_top = 30.5571
+margin_right = 403.79
+margin_bottom = 230.557
+rect_scale = Vector2( 0.0220969, 0.034355 )
+texture_normal = SubResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B4" type="TextureButton" parent="Player (Bill)/CanvasLayer/SenatePopup"]
+margin_left = 15.1255
+margin_top = 31.1297
+margin_right = 415.126
+margin_bottom = 231.13
+rect_scale = Vector2( 0.0246824, 0.0393458 )
+texture_normal = SubResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C4" type="TextureButton" parent="Player (Bill)/CanvasLayer/SenatePopup"]
+margin_left = 27.4142
+margin_top = 30.9468
+margin_right = 427.414
+margin_bottom = 230.947
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CommitteeLostPopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/CommitteeLostPopup"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 24 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/CommitteeLostPopup/Background"]
+margin_left = -5.51825
+margin_top = -7.61711
+margin_right = 694.482
+margin_bottom = 492.383
+rect_scale = Vector2( 0.0168008, 0.0255631 )
+texture = SubResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok2" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteeLostPopup"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CommitteeWonPopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/CommitteeWonPopup"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 27 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/CommitteeWonPopup/Background"]
+margin_left = -6.19611
+margin_top = -7.6647
+margin_right = 693.804
+margin_bottom = 492.335
+rect_scale = Vector2( 0.0173686, 0.0282786 )
+texture = SubResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok3" type="TextureButton" parent="Player (Bill)/CanvasLayer/CommitteeWonPopup"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HouseLost" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/HouseLost"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 30 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/HouseLost/Background"]
+margin_left = -6.19611
+margin_top = -7.6647
+margin_right = 693.804
+margin_bottom = 492.335
+rect_scale = Vector2( 0.0174067, 0.0269081 )
+texture = SubResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok4" type="TextureButton" parent="Player (Bill)/CanvasLayer/HouseLost"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SenateLost" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/SenateLost"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 33 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/SenateLost/Background"]
+margin_left = -6.19611
+margin_top = -7.6647
+margin_right = 693.804
+margin_bottom = 492.335
+rect_scale = Vector2( 0.0174067, 0.0269081 )
+texture = SubResource( 34 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok5" type="TextureButton" parent="Player (Bill)/CanvasLayer/SenateLost"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 35 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SenateWon" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/SenateWon"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 36 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/SenateWon/Background"]
+margin_left = -6.19611
+margin_top = -7.6647
+margin_right = 693.804
+margin_bottom = 492.335
+rect_scale = Vector2( 0.0174067, 0.0269081 )
+texture = SubResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok6" type="TextureButton" parent="Player (Bill)/CanvasLayer/SenateWon"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CommunityFinished" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 143.564, 118.952 )
+scale = Vector2( 0.555017, 0.673436 )
+texture = SubResource( 39 )
+
+[node name="HopperFinished" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+show_behind_parent = true
+position = Vector2( 422.133, 124.553 )
+scale = Vector2( 0.527721, 0.598381 )
+texture = SubResource( 39 )
+
+[node name="CommitteeWon" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 680.213, 157.542 )
+scale = Vector2( 0.601796, 0.77715 )
+texture = SubResource( 39 )
+
+[node name="FloorWon" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 1031.48, 168.48 )
+scale = Vector2( 0.601796, 0.77715 )
+texture = SubResource( 40 )
+
+[node name="CommitteeLost" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 677.923, 171.29 )
+scale = Vector2( 0.279945, 0.297009 )
+texture = SubResource( 41 )
+
+[node name="FloorLost" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 1023.86, 172.53 )
+scale = Vector2( 0.279945, 0.297009 )
+texture = SubResource( 42 )
+
+[node name="GoBack" type="TextureButton" parent="Player (Bill)/CanvasLayer"]
+visible = false
+margin_left = 22.7867
+margin_top = 599.516
+margin_right = 422.787
+margin_bottom = 799.516
+rect_scale = Vector2( 0.468026, 0.49763 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Community" parent="." instance=ExtResource( 4 )]
+show_behind_parent = true
+position = Vector2( 9.88135, -409.974 )
+
+[node name="CollisionShape2D" parent="Community" index="0"]
+scale = Vector2( 1.10842, 1.12136 )
+
+[node name="Hopper" parent="." instance=ExtResource( 4 )]
+show_behind_parent = true
+position = Vector2( 285.621, -408.64 )
+
+[node name="CollisionShape2D" parent="Hopper" index="0"]
+scale = Vector2( 1.22627, 1.10961 )
+shape = SubResource( 43 )
+
+[node name="CollisionShape2D" parent="Hopper/CollisionShape2D/Area2D" index="0"]
+shape = SubResource( 44 )
+
+[node name="Sprite" parent="Hopper" index="1"]
+position = Vector2( 122.075, 76.3274 )
+scale = Vector2( 1.13611, 0.971774 )
+texture = SubResource( 45 )
+
+[node name="Committee" parent="." instance=ExtResource( 4 )]
+show_behind_parent = true
+position = Vector2( 554.611, -365.188 )
+
+[node name="CollisionShape2D" parent="Committee" index="0"]
+position = Vector2( 119.284, 75.9168 )
+scale = Vector2( 0.94311, 1.65075 )
+shape = SubResource( 46 )
+
+[node name="CollisionShape2D" parent="Committee/CollisionShape2D/Area2D" index="0"]
+shape = SubResource( 47 )
+
+[node name="Sprite" parent="Committee" index="1"]
+position = Vector2( 122.075, 76.3274 )
+scale = Vector2( 0.676695, 0.623037 )
+texture = SubResource( 48 )
+
+[node name="Floor" parent="." instance=ExtResource( 4 )]
+show_behind_parent = true
+position = Vector2( 898.124, -363.873 )
+
+[node name="CollisionShape2D" parent="Floor" index="0"]
+position = Vector2( 122.281, 75.9168 )
+scale = Vector2( 1.83553, 1.59963 )
+shape = SubResource( 49 )
+
+[node name="CollisionShape2D" parent="Floor/CollisionShape2D/Area2D" index="0"]
+shape = SubResource( 50 )
+
+[node name="Sprite" parent="Floor" index="1"]
+position = Vector2( 122.075, 76.3274 )
+scale = Vector2( 0.643806, 0.623037 )
+texture = SubResource( 51 )
+
+[node name="President" parent="." instance=ExtResource( 4 )]
+show_behind_parent = true
+position = Vector2( 890.187, -1.37192 )
+
+[node name="CollisionShape2D" parent="President" index="0"]
+position = Vector2( 129.773, 72.9202 )
+scale = Vector2( 1.52943, 2.19186 )
+shape = SubResource( 52 )
+
+[node name="CollisionShape2D" parent="President/CollisionShape2D/Area2D" index="0"]
+shape = SubResource( 53 )
+
+[node name="Sprite" parent="President" index="1"]
+position = Vector2( 129.567, 70.3342 )
+scale = Vector2( 0.126219, 0.123364 )
+texture = SubResource( 54 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+margin_left = 1122.53
+margin_top = -162.144
+margin_right = 1272.53
+margin_bottom = 255.856
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="Player (Bill)/CollisionShape2D/Area2D" to="Player (Bill)" method="_on_Area2D_body_entered"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/ProblemPopup/OK" to="Player (Bill)" method="_on_OK_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/ProblemPopup/OK" to="Player (Bill)" method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/HopperPopup/Entered" to="Player (Bill)" method="_on_Entered_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteePopup/A" to="Player (Bill)" method="_on_A_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteePopup/B" to="Player (Bill)" method="_on_B_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteePopup/C" to="Player (Bill)" method="_on_C_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/FloorHouse/A3" to="Player (Bill)" method="_on_A3_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/FloorHouse/B3" to="Player (Bill)" method="_on_B3_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/FloorHouse/C3" to="Player (Bill)" method="_on_C3_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteePopup2/A2" to="Player (Bill)" method="_on_A2_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteePopup2/B2" to="Player (Bill)" method="_on_B2_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteePopup2/C2" to="Player (Bill)" method="_on_C2_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/SenatePopup/A4" to="Player (Bill)" method="_on_A4_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/SenatePopup/B4" to="Player (Bill)" method="_on_B4_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/SenatePopup/C4" to="Player (Bill)" method="_on_C4_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteeLostPopup/Ok2" to="Player (Bill)" method="_on_Ok2_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteeWonPopup/Ok3" to="Player (Bill)" method="_on_Ok3_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/HouseLost/Ok4" to="Player (Bill)" method="_on_Ok4_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/SenateLost/Ok5" to="Player (Bill)" method="_on_Ok5_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/SenateWon/Ok6" to="Player (Bill)" method="_on_Ok6_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/GoBack" to="Player (Bill)" method="_on_GoBack_pressed"]
+
+[editable path="Player (Bill)"]
+
+[editable path="Community"]
+
+[editable path="Hopper"]
+
+[editable path="Committee"]
+
+[editable path="Floor"]
+
+[editable path="President"]

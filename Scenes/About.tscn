@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Artwork/gobackunclick.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Artwork/gobackclick.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Artwork/abouttext.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/About.gd" type="Script" id=4]
+
+[node name="About" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 15.5563
+margin_top = 623.668
+margin_right = 415.556
+margin_bottom = 823.668
+rect_scale = Vector2( 0.470624, 0.398029 )
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 302.0
+margin_top = 24.0
+margin_right = 1002.0
+margin_bottom = 724.0
+rect_scale = Vector2( 0.957106, 0.95401 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
