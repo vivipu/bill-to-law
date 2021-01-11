@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://Scenes/Player (Bill).tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/World.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Assets/Artwork/ok.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Artwork/gobackunclick.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Artwork/gobackclick.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Artwork/winbanner.png" type="Texture" id=11]
 
 [sub_resource type="StreamTexture" id=1]
 flags = 4
@@ -103,6 +104,26 @@ load_path = "res://.import/majorrailroad2.png-03abe852401e0d37749153e8084958d5.s
 flags = 4
 load_path = "res://.import/majorrailroad.png-d8e4301bdaeb30336e2df218a329d23c.stex"
 
+[sub_resource type="StreamTexture" id=55]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=56]
+flags = 4
+load_path = "res://.import/president.png-cfc64cb224bb0545b8f45925f6715d2c.stex"
+
+[sub_resource type="StreamTexture" id=57]
+flags = 4
+load_path = "res://.import/president1.png-9b64c7b87796cb76e91edd7c628780ab.stex"
+
+[sub_resource type="StreamTexture" id=58]
+flags = 4
+load_path = "res://.import/president2.png-bde0d3ddb5665017ca5a8bf8e02f7281.stex"
+
+[sub_resource type="StreamTexture" id=59]
+flags = 4
+load_path = "res://.import/president3.png-b92eb6fd3f2938012c30826002079ebf.stex"
+
 [sub_resource type="StreamTexture" id=24]
 flags = 4
 load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
@@ -151,6 +172,18 @@ load_path = "res://.import/senatelost.png-d8c366d7547ce85528395ad82328e780.stex"
 flags = 4
 load_path = "res://.import/ok2.png-caac9dec688630e5e86c6e2ff6c98126.stex"
 
+[sub_resource type="StreamTexture" id=60]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=61]
+flags = 4
+load_path = "res://.import/presidentlost.png-b61ca47ab015ed7f4e861c7eb035b9dd.stex"
+
+[sub_resource type="StreamTexture" id=62]
+flags = 4
+load_path = "res://.import/ok2.png-caac9dec688630e5e86c6e2ff6c98126.stex"
+
 [sub_resource type="StreamTexture" id=36]
 flags = 4
 load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
@@ -163,6 +196,18 @@ load_path = "res://.import/floorwon.png-36f6c6d18529f2a7e34ff25520ada96f.stex"
 flags = 4
 load_path = "res://.import/ok.png-43e45bdf2a26973ecf897b4dc3a31aec.stex"
 
+[sub_resource type="StreamTexture" id=63]
+flags = 4
+load_path = "res://.import/light.png-ae4c19471962a1896da308bb6e8e799a.stex"
+
+[sub_resource type="StreamTexture" id=64]
+flags = 4
+load_path = "res://.import/presidentwon.png-97ff84e6f13057f250ab2f56e63f98e1.stex"
+
+[sub_resource type="StreamTexture" id=65]
+flags = 4
+load_path = "res://.import/ok.png-43e45bdf2a26973ecf897b4dc3a31aec.stex"
+
 [sub_resource type="StreamTexture" id=39]
 flags = 4
 load_path = "res://.import/checkmark.webp-7ebda7a49facd03e2eff71f36b91be02.stex"
@@ -171,11 +216,19 @@ load_path = "res://.import/checkmark.webp-7ebda7a49facd03e2eff71f36b91be02.stex"
 flags = 4
 load_path = "res://.import/checkmark.webp-7ebda7a49facd03e2eff71f36b91be02.stex"
 
+[sub_resource type="StreamTexture" id=66]
+flags = 4
+load_path = "res://.import/checkmark.webp-7ebda7a49facd03e2eff71f36b91be02.stex"
+
 [sub_resource type="StreamTexture" id=41]
 flags = 4
 load_path = "res://.import/x-30465_640.webp-68491137edfa9ba280c4296ca9f96883.stex"
 
 [sub_resource type="StreamTexture" id=42]
+flags = 4
+load_path = "res://.import/x-30465_640.webp-68491137edfa9ba280c4296ca9f96883.stex"
+
+[sub_resource type="StreamTexture" id=67]
 flags = 4
 load_path = "res://.import/x-30465_640.webp-68491137edfa9ba280c4296ca9f96883.stex"
 
@@ -523,11 +576,11 @@ __meta__ = {
 }
 
 [node name="A4" type="TextureButton" parent="Player (Bill)/CanvasLayer/SenatePopup"]
-margin_left = 3.78955
-margin_top = 30.5571
-margin_right = 403.79
-margin_bottom = 230.557
-rect_scale = Vector2( 0.0220969, 0.034355 )
+margin_left = 3.20288
+margin_top = 31.3025
+margin_right = 403.203
+margin_bottom = 231.302
+rect_scale = Vector2( 0.0233748, 0.0368018 )
 texture_normal = SubResource( 21 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -551,6 +604,67 @@ margin_right = 427.414
 margin_bottom = 230.947
 rect_scale = Vector2( 0.0257302, 0.0417287 )
 texture_normal = SubResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PresidentPopup" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/PresidentPopup"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 55 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/PresidentPopup/Background"]
+margin_left = -6.04431
+margin_top = -7.78673
+margin_right = 693.956
+margin_bottom = 492.213
+rect_scale = Vector2( 0.0170474, 0.0244227 )
+texture = SubResource( 56 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A5" type="TextureButton" parent="Player (Bill)/CanvasLayer/PresidentPopup"]
+margin_left = 3.37048
+margin_top = 30.8056
+margin_right = 403.371
+margin_bottom = 230.806
+rect_scale = Vector2( 0.0220969, 0.034355 )
+texture_normal = SubResource( 57 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B5" type="TextureButton" parent="Player (Bill)/CanvasLayer/PresidentPopup"]
+margin_left = 15.1255
+margin_top = 31.1297
+margin_right = 415.126
+margin_bottom = 231.13
+rect_scale = Vector2( 0.0246824, 0.0393458 )
+texture_normal = SubResource( 58 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C5" type="TextureButton" parent="Player (Bill)/CanvasLayer/PresidentPopup"]
+margin_left = 28.9227
+margin_top = 30.5741
+margin_right = 428.923
+margin_bottom = 230.574
+rect_scale = Vector2( 0.0233664, 0.0375577 )
+texture_normal = SubResource( 59 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -711,6 +825,45 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="PresidentLost" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/PresidentLost"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 60 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/PresidentLost/Background"]
+margin_left = -6.19611
+margin_top = -7.6647
+margin_right = 693.804
+margin_bottom = 492.335
+rect_scale = Vector2( 0.0174067, 0.0269081 )
+texture = SubResource( 61 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok7" type="TextureButton" parent="Player (Bill)/CanvasLayer/PresidentLost"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 62 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="SenateWon" type="Popup" parent="Player (Bill)/CanvasLayer"]
 margin_left = 204.261
 margin_top = 79.4114
@@ -750,6 +903,45 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="PresidentWon" type="Popup" parent="Player (Bill)/CanvasLayer"]
+margin_left = 204.261
+margin_top = 79.4114
+margin_right = 244.261
+margin_bottom = 119.411
+rect_scale = Vector2( 21.2609, 14.3428 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="Sprite" parent="Player (Bill)/CanvasLayer/PresidentWon"]
+self_modulate = Color( 0.345098, 0.647059, 0.737255, 1 )
+position = Vector2( 19.9317, 20.2499 )
+scale = Vector2( 2.50749, 2.4635 )
+texture = SubResource( 63 )
+
+[node name="Explanation" type="TextureRect" parent="Player (Bill)/CanvasLayer/PresidentWon/Background"]
+margin_left = -6.19611
+margin_top = -7.6647
+margin_right = 693.804
+margin_bottom = 492.335
+rect_scale = Vector2( 0.0174067, 0.0269081 )
+texture = SubResource( 64 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok8" type="TextureButton" parent="Player (Bill)/CanvasLayer/PresidentWon"]
+margin_left = 15.11
+margin_top = 30.8423
+margin_right = 415.11
+margin_bottom = 230.843
+rect_scale = Vector2( 0.0257302, 0.0417287 )
+texture_normal = SubResource( 65 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="CommunityFinished" type="Sprite" parent="Player (Bill)/CanvasLayer"]
 visible = false
 position = Vector2( 143.564, 118.952 )
@@ -775,6 +967,12 @@ position = Vector2( 1031.48, 168.48 )
 scale = Vector2( 0.601796, 0.77715 )
 texture = SubResource( 40 )
 
+[node name="PresidentWonIcon" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 1023.07, 531.747 )
+scale = Vector2( 0.601796, 0.77715 )
+texture = SubResource( 66 )
+
 [node name="CommitteeLost" type="Sprite" parent="Player (Bill)/CanvasLayer"]
 visible = false
 position = Vector2( 677.923, 171.29 )
@@ -787,15 +985,33 @@ position = Vector2( 1023.86, 172.53 )
 scale = Vector2( 0.279945, 0.297009 )
 texture = SubResource( 42 )
 
+[node name="PresidentLostIcon" type="Sprite" parent="Player (Bill)/CanvasLayer"]
+visible = false
+position = Vector2( 1020.5, 530.752 )
+scale = Vector2( 0.279945, 0.297009 )
+texture = SubResource( 67 )
+
 [node name="GoBack" type="TextureButton" parent="Player (Bill)/CanvasLayer"]
 visible = false
 margin_left = 22.7867
 margin_top = 599.516
 margin_right = 422.787
 margin_bottom = 799.516
-rect_scale = Vector2( 0.468026, 0.49763 )
+rect_scale = Vector2( 0.496524, 0.482702 )
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinBanner" type="TextureRect" parent="Player (Bill)/CanvasLayer"]
+visible = false
+margin_left = 283.18
+margin_top = 596.326
+margin_right = 983.18
+margin_bottom = 796.326
+rect_scale = Vector2( 0.75205, 0.747343 )
+texture = ExtResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -900,11 +1116,16 @@ __meta__ = {
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/SenatePopup/A4" to="Player (Bill)" method="_on_A4_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/SenatePopup/B4" to="Player (Bill)" method="_on_B4_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/SenatePopup/C4" to="Player (Bill)" method="_on_C4_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/PresidentPopup/A5" to="Player (Bill)" method="_on_A5_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/PresidentPopup/B5" to="Player (Bill)" method="_on_B5_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/PresidentPopup/C5" to="Player (Bill)" method="_on_C5_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteeLostPopup/Ok2" to="Player (Bill)" method="_on_Ok2_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/CommitteeWonPopup/Ok3" to="Player (Bill)" method="_on_Ok3_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/HouseLost/Ok4" to="Player (Bill)" method="_on_Ok4_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/SenateLost/Ok5" to="Player (Bill)" method="_on_Ok5_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/PresidentLost/Ok7" to="Player (Bill)" method="_on_Ok7_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/SenateWon/Ok6" to="Player (Bill)" method="_on_Ok6_pressed"]
+[connection signal="pressed" from="Player (Bill)/CanvasLayer/PresidentWon/Ok8" to="Player (Bill)" method="_on_Ok8_pressed"]
 [connection signal="pressed" from="Player (Bill)/CanvasLayer/GoBack" to="Player (Bill)" method="_on_GoBack_pressed"]
 
 [editable path="Player (Bill)"]

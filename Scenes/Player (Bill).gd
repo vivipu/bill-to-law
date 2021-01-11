@@ -28,6 +28,9 @@ onready var HouseLost = get_node("CanvasLayer/HouseLost")
 onready var SenatePopup = get_node("CanvasLayer/SenatePopup")
 onready var SenateLost = get_node("CanvasLayer/SenateLost")
 onready var SenateWon = get_node("CanvasLayer/SenateWon")
+onready var PresidentPopup = get_node("CanvasLayer/PresidentPopup")
+onready var PresidentLost = get_node("CanvasLayer/PresidentLost")
+onready var PresidentWon = get_node("CanvasLayer/PresidentWon")
 func _physics_process(delta):
 	var motion = Vector2()
 	if Input.is_action_pressed("up"):	
@@ -61,7 +64,7 @@ func _on_Area2D_body_entered(body):
 			FloorHouse.popup()
 	if "President" in body.name:
 		if president_unlock == true and president_won == false and president_lost == false:
-			pass
+			PresidentPopup.popup()
 func _on_OK_pressed():
 	ProblemPopup.hide()
 	community_finished = true
@@ -139,3 +142,23 @@ func _on_B4_pressed():
 func _on_C4_pressed():
 	SenatePopup.hide()
 	SenateWon.popup()
+func _on_A5_pressed():
+	PresidentPopup.hide()
+	PresidentLost.popup()
+func _on_B5_pressed():
+	PresidentPopup.hide()
+	PresidentWon.popup()
+func _on_C5_pressed():
+	PresidentPopup.hide()
+	PresidentLost.popup()
+func _on_Ok7_pressed():
+	PresidentLost.hide()
+	$CanvasLayer/PresidentLostIcon.show()
+	president_lost = true
+	$CanvasLayer/GoBack.show()
+func _on_Ok8_pressed():
+	PresidentWon.hide()
+	$CanvasLayer/PresidentWonIcon.show()
+	president_won = true
+	$CanvasLayer/WinBanner.show()
+	$CanvasLayer/GoBack.show()
